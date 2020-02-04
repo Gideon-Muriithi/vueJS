@@ -15,6 +15,7 @@ var app = new Vue({
                 variantId: 2233,
                 variantColor: "blue"
             }
-        ]
+        ],
+        cart: 0
     }
 })
