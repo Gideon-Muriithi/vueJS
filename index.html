@@ -10,7 +10,12 @@
 </head>
 <body>
     <div id="app">
-        <product :premium="premium"></product>
+        <div class="cart">
+            <p>Cart({{ cart.length }})</p>
+        </div>
+        <product :premium="premium" @add-to-cart="updateCart"></product>
+        <br>
+        <product-review @review-submitted="addReview"></product-review>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
 </body>
